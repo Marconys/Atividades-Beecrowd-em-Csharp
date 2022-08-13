@@ -13,19 +13,19 @@ namespace Beecrowd_1010
     {
         static void Main(string[] args)
         {
-         string[] Compra = Console.ReadLine().Split(' ');
-            int CodProd = Int32.Parse(Compra[0]);
-            int QtdProd = Int32.Parse(Compra[1]);
-            double ValorProd = double.Parse(Compra[2], CultureInfo.InvariantCulture);
+         string[] compra = Console.ReadLine().Split(' ');
+            int codProd = Int32.Parse(compra[0]);
+            int qtdProd = Int32.Parse(compra[1]);
+            double valorProd = double.Parse(compra[2], CultureInfo.InvariantCulture);
 
-            string[] Compra1 = Console.ReadLine().Split(' ');
-            int CodProd1 = Int32.Parse(Compra1[0]);
-            int QtdProd1 = Int32.Parse(Compra1[1]);
-            double ValorProd1 = double.Parse(Compra1[2], CultureInfo.InvariantCulture);
+            string[] compra1 = Console.ReadLine().Split(' ');
+            int codProd1 = Int32.Parse(compra1[0]);
+            int qtdProd1 = Int32.Parse(compra1[1]);
+            double valorProd1 = double.Parse(compra1[2], CultureInfo.InvariantCulture);
 
-            double Total = (QtdProd * ValorProd) + (QtdProd1 * ValorProd1);
+            double total = (qtdProd * valorProd) + (qtdProd1 * valorProd1);
 
-            Console.WriteLine("VALOR A PAGAR: R$ {0}",Total.ToString("F2",CultureInfo.InvariantCulture));
+            Console.WriteLine("VALOR A PAGAR: R$ {0}",total.ToString("F2",CultureInfo.InvariantCulture));
 
             Console.ReadKey();
         }
