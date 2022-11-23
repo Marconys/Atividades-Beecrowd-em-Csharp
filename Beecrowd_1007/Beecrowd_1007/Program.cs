@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd_1007
 {
@@ -10,16 +6,14 @@ namespace Beecrowd_1007
     {
         static void Main(string[] args)
         {
-            int A  = Convert.ToInt32(Console.ReadLine());
-            int B = Convert.ToInt32(Console.ReadLine());
-            int C = Convert.ToInt32(Console.ReadLine());
-            int D = Convert.ToInt32(Console.ReadLine());
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            int C = int.Parse(Console.ReadLine());
+            int D = int.Parse(Console.ReadLine());
 
-            int diferenca = (A * B - C * D);
+            int dif = (A * B - C * D);
 
-
-            Console.WriteLine("DIFERENCA = {0}", diferenca);
-
+            Console.WriteLine($"DIFERENCA = {dif}");
             Console.ReadKey();
 
         }
